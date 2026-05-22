@@ -1,0 +1,547 @@
+[
+  {
+    "source": "NeurIPS-98",
+    "target": "ICML-1121",
+    "kind": "sister"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "ICLR-2273",
+    "kind": "sister"
+  },
+  {
+    "source": "ICML-1121",
+    "target": "ICLR-2273",
+    "kind": "sister"
+  },
+  {
+    "source": "AAAI-1629",
+    "target": "IJCAI-1313",
+    "kind": "sister"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "AAAI-1629",
+    "kind": "cross-field"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "IJCAI-1313",
+    "kind": "cross-field"
+  },
+  {
+    "source": "CVPR-604",
+    "target": "ICCV-638",
+    "kind": "sister"
+  },
+  {
+    "source": "CVPR-604",
+    "target": "ECCV-479",
+    "kind": "sister"
+  },
+  {
+    "source": "ICCV-638",
+    "target": "ECCV-479",
+    "kind": "sister"
+  },
+  {
+    "source": "CVPR-604",
+    "target": "BMVC-296",
+    "kind": "sister"
+  },
+  {
+    "source": "CVPR-604",
+    "target": "WACV-763",
+    "kind": "sister"
+  },
+  {
+    "source": "ICCV-638",
+    "target": "BMVC-296",
+    "kind": "sister"
+  },
+  {
+    "source": "ACL-196",
+    "target": "EMNLP-448",
+    "kind": "sister"
+  },
+  {
+    "source": "ACL-196",
+    "target": "NAACL-1648",
+    "kind": "sister"
+  },
+  {
+    "source": "EMNLP-448",
+    "target": "NAACL-1648",
+    "kind": "sister"
+  },
+  {
+    "source": "ACL-196",
+    "target": "COLING-949",
+    "kind": "sister"
+  },
+  {
+    "source": "ACL-196",
+    "target": "EACL-468",
+    "kind": "sister"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "CVPR-604",
+    "kind": "cross-field"
+  },
+  {
+    "source": "ICML-1121",
+    "target": "CVPR-604",
+    "kind": "cross-field"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "ACL-196",
+    "kind": "cross-field"
+  },
+  {
+    "source": "NeurIPS-98",
+    "target": "EMNLP-448",
+    "kind": "cross-field"
+  },
+  {
+    "source": "ICML-1121",
+    "target": "ACL-196",
+    "kind": "cross-field"
+  },
+  {
+    "source": "SOSP-48",
+    "target": "OSDI-1842",
+    "kind": "sister"
+  },
+  {
+    "source": "SOSP-48",
+    "target": "ASPLOS-147",
+    "kind": "sister"
+  },
+  {
+    "source": "OSDI-1842",
+    "target": "ASPLOS-147",
+    "kind": "sister"
+  },
+  {
+    "source": "EuroSys-525",
+    "target": "SOSP-48",
+    "kind": "sister"
+  },
+  {
+    "source": "EuroSys-525",
+    "target": "OSDI-1842",
+    "kind": "sister"
+  },
+  {
+    "source": "ATC-921",
+    "target": "NSDI-1789",
+    "kind": "sister"
+  },
+  {
+    "source": "ATC-921",
+    "target": "OSDI-1842",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGCOMM-11",
+    "target": "NSDI-1789",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGCOMM-11",
+    "target": "INFOCOM-2074",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGCOMM-11",
+    "target": "MOBICOM-27",
+    "kind": "sister"
+  },
+  {
+    "source": "NSDI-1789",
+    "target": "INFOCOM-2074",
+    "kind": "sister"
+  },
+  {
+    "source": "MOBICOM-27",
+    "target": "Mobisys-45",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGMOD-56",
+    "target": "VLDB-1261",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGMOD-56",
+    "target": "ICDE-986",
+    "kind": "sister"
+  },
+  {
+    "source": "VLDB-1261",
+    "target": "ICDE-986",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGMOD-56",
+    "target": "EDBT-528",
+    "kind": "sister"
+  },
+  {
+    "source": "ICSE-1209",
+    "target": "FSE-52",
+    "kind": "sister"
+  },
+  {
+    "source": "ICSE-1209",
+    "target": "ASE-279",
+    "kind": "sister"
+  },
+  {
+    "source": "FSE-52",
+    "target": "ASE-279",
+    "kind": "sister"
+  },
+  {
+    "source": "ICSE-1209",
+    "target": "ISSTA-1412",
+    "kind": "sister"
+  },
+  {
+    "source": "ASE-279",
+    "target": "ISSTA-1412",
+    "kind": "sister"
+  },
+  {
+    "source": "CHI-1053",
+    "target": "UIST-66",
+    "kind": "sister"
+  },
+  {
+    "source": "CHI-1053",
+    "target": "CSCW-13",
+    "kind": "sister"
+  },
+  {
+    "source": "UIST-66",
+    "target": "CSCW-13",
+    "kind": "sister"
+  },
+  {
+    "source": "CHI-1053",
+    "target": "IUI-1101",
+    "kind": "sister"
+  },
+  {
+    "source": "SP-750",
+    "target": "USENIX-Security-1841",
+    "kind": "sister"
+  },
+  {
+    "source": "SP-750",
+    "target": "CCS-12",
+    "kind": "sister"
+  },
+  {
+    "source": "USENIX-Security-1841",
+    "target": "CCS-12",
+    "kind": "sister"
+  },
+  {
+    "source": "CCS-12",
+    "target": "NDSS-1840",
+    "kind": "sister"
+  },
+  {
+    "source": "SP-750",
+    "target": "NDSS-1840",
+    "kind": "sister"
+  },
+  {
+    "source": "STOC-65",
+    "target": "FOCS-745",
+    "kind": "sister"
+  },
+  {
+    "source": "STOC-65",
+    "target": "SODA-80",
+    "kind": "sister"
+  },
+  {
+    "source": "FOCS-745",
+    "target": "SODA-80",
+    "kind": "sister"
+  },
+  {
+    "source": "ICALP-864",
+    "target": "STOC-65",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGGRAPH-38",
+    "target": "SiggraphA-957",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGGRAPH-38",
+    "target": "EuroVis-462",
+    "kind": "sister"
+  },
+  {
+    "source": "KDD-26",
+    "target": "ICDM-642",
+    "kind": "sister"
+  },
+  {
+    "source": "KDD-26",
+    "target": "WSDM-31",
+    "kind": "sister"
+  },
+  {
+    "source": "KDD-26",
+    "target": "NeurIPS-98",
+    "kind": "cross-field"
+  },
+  {
+    "source": "WWW-1548",
+    "target": "WSDM-31",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGIR-29",
+    "target": "WWW-1548",
+    "kind": "sister"
+  },
+  {
+    "source": "SIGIR-29",
+    "target": "WSDM-31",
+    "kind": "sister"
+  },
+  {
+    "source": "JOURNAL:TPAMI",
+    "target": "CVPR-604",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TPAMI",
+    "target": "ICCV-638",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TPAMI",
+    "target": "ECCV-479",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:IJCV",
+    "target": "CVPR-604",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:IJCV",
+    "target": "ICCV-638",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:PR",
+    "target": "CVPR-604",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TIP",
+    "target": "CVPR-604",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JMLR",
+    "target": "NeurIPS-98",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JMLR",
+    "target": "ICML-1121",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JMLR",
+    "target": "ICLR-2273",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:AIJ",
+    "target": "AAAI-1629",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:AIJ",
+    "target": "IJCAI-1313",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TNNLS",
+    "target": "NeurIPS-98",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TON",
+    "target": "SIGCOMM-11",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TON",
+    "target": "INFOCOM-2074",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:ComNet",
+    "target": "SIGCOMM-11",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOCS",
+    "target": "SOSP-48",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOCS",
+    "target": "OSDI-1842",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TPDS",
+    "target": "ICDCS-1002",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TSE",
+    "target": "ICSE-1209",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TSE",
+    "target": "FSE-52",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOSEM",
+    "target": "ICSE-1209",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOSEM",
+    "target": "FSE-52",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:EMSE",
+    "target": "ICSE-1209",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JSS",
+    "target": "ICSE-1209",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOPLAS",
+    "target": "PLDI-84",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TIFS",
+    "target": "SP-750",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TIFS",
+    "target": "USENIX-Security-1841",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TDSC",
+    "target": "SP-750",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TDSC",
+    "target": "CCS-12",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TKDE",
+    "target": "SIGMOD-56",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TKDE",
+    "target": "VLDB-1261",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TKDE",
+    "target": "ICDE-986",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TODS",
+    "target": "SIGMOD-56",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TODS",
+    "target": "VLDB-1261",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:VLDBJ",
+    "target": "VLDB-1261",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOG",
+    "target": "SIGGRAPH-38",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:CGF",
+    "target": "EuroVis-462",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOCHI",
+    "target": "CHI-1053",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TOIS",
+    "target": "SIGIR-29",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JACM",
+    "target": "STOC-65",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:JACM",
+    "target": "FOCS-745",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:SICOMP",
+    "target": "STOC-65",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:SICOMP",
+    "target": "FOCS-745",
+    "kind": "journal-conf"
+  },
+  {
+    "source": "JOURNAL:TCS",
+    "target": "STOC-65",
+    "kind": "journal-conf"
+  }
+]

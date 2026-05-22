@@ -1,0 +1,59 @@
+.glass-input:focus {
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.18),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.18),
+    0 0 0 2px rgba(122, 168, 255, 0.4),
+    0 0 24px rgba(122, 168, 255, 0.15);
+}
+.glass-input::placeholder {
+  color: rgba(230, 232, 238, 0.45);
+}
+
+.glass-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  transform: translateY(-1px);
+}
+.glass-button:active {
+  transform: translateY(0);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+.glass-icon-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e6e8ee;
+}
+
+.glass-link:hover {
+  color: #cfdcff;
+  text-decoration-color: rgba(207, 220, 255, 0.7);
+}
+
+.glass-checkbox {
+  accent-color: #7aa8ff;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+.glass-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

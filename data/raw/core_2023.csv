@@ -1,0 +1,2248 @@
+<html>
+    
+    
+    <head>
+        
+        
+        <link href="/core/static/core/reset.css" rel="stylesheet" type="text/css" />
+        <link href="/core/static/core/text.css" rel="stylesheet" type="text/css" />
+        <link href="/core/static/core/960.css" rel="stylesheet" type="text/css" />
+        <link href="/core/static/core/main.css" rel="stylesheet" type="text/css" /> 
+        
+        <link rel="stylesheet" type="text/css" href="/core/static/conferences/style.css" />
+        <script src="/core/static/conferences/script.js"></script>
+        <script>
+	    function showReason(){
+            alert("If you wish to make entries in the comments area, we need a login ID in order to allow users to return to their entries. " +
+                    "We use LinkedIn to avoid implementing our own mechanism, and due to its academic nature. If you don't have a login it is free to sign up. " +
+                    "No login is required to search and view the rankings DB.");
+	    }
+        </script>
+    </head>
+    
+    
+    <body>
+        <div id="container" class="container_12 clearfix" style="width:100%">
+            
+            
+            <div id="sidebar" style="padding-left: 10px">
+                <a href=https://www.core.edu.au/icore-portal>
+                    <img alt="logo" src="/core/static/core/icore-logo.png" />
+                </a>
+            </div>
+            <div id="content" style="padding-left: 10px">
+                <h2>ICORE Conference Portal</h2>
+            </div>
+            
+
+            
+            <div id="accountbar">
+
+                
+                <a href="/conf-ranks/login">Sign in with LinkedIn</a><br />
+                Signing in with LinkedIn authorizes us to store your name, email address, headline and display picture.
+                <span onclick=showReason() style="color:#0464ad; cursor:pointer;"> why? </span>
+	        
+
+            </div>
+            
+
+            <div class="grid_12" style="width:100%; margin:0px;">
+                
+    <div style="padding-left: 10px; margin-top: -20px">CORE rankings is now an international collaboration named ICORE</div>
+
+    <div id="search">
+        Any rankings questions should be sent to <a href="mailto:icore.rankings@gmail.com">icore.rankings@gmail.com</a>
+        <br>
+        <a href="https://www.core.edu.au/icore-portal">ICORE rankings page</a> |
+        <a href="https://docs.google.com/document/d/11lyr_N7rnyhpvTnGJRVvrFIp73REt3lwTCmy0k8geJo">Frequently asked questions</a> |
+        <a href="https://drive.google.com/file/d/1DQixeK53tlq_jh6IspIHroiwu1pmM6-y">Description of Conference Ranks</a> |
+        <a href="https://drive.google.com/file/d/1bxFw3pTd-G5bMqcHr9XPoVtuZJa68zua">Fields of Research codes</a>
+        <br>
+        <a href="https://drive.google.com/file/d/1zIraYjVQZLlRFiR3g9RSWKCCK4Hv-Ide">CORE Dora discussion document</a> |
+        <a href="https://drive.google.com/file/d/1P0dvw7DIo14z9om2OvSI1U_uFScx8eiQ">Guidelines for reporting rankings</a> |
+        <a href="https://drive.google.com/file/d/1Wsn_rKeQeAxBJj-Y9IWPNwDNv1J0cuK1">Usage of CORE rankings</a> |
+        <a href=/conf-changes/serve_file/icore-addition.pdf/>ICORE addition and upgrade requirements</a> |
+        <a href="https://drive.google.com/file/d/1OUOAQLKNCvKLiqb4bkkrm3nK3iyJEGR4FkrwQwRThgk">Data used in Rankings and responses to common concerns</a>
+        <br>
+
+        <form action="/conf-ranks/" method="get" id="searchform">
+            <input type="text" name="search" value=""/>
+            Search by:
+            <select name="by">
+                <option value="all" selected="selected">All</option>
+                <option value="title" >Title</option>
+                <option value="acronym" >Acronym</option>
+                <option value="rank" >Rank</option>
+                <option value="for" >Field Of Research</option>
+            </select>
+            Source:
+            <select name="source">
+                <option value="all" >All</option>
+                
+                    <option value="ICORE2026" >
+                        ICORE2026
+                    </option>
+                
+                    <option value="CORE2023" selected="selected">
+                        CORE2023
+                    </option>
+                
+                    <option value="CORE2021" >
+                        CORE2021
+                    </option>
+                
+                    <option value="CORE2020" >
+                        CORE2020
+                    </option>
+                
+                    <option value="CORE2018" >
+                        CORE2018
+                    </option>
+                
+                    <option value="CORE2017" >
+                        CORE2017
+                    </option>
+                
+                    <option value="CORE2014" >
+                        CORE2014
+                    </option>
+                
+                    <option value="CORE2013" >
+                        CORE2013
+                    </option>
+                
+                    <option value="ERA2010" >
+                        ERA2010
+                    </option>
+                
+                    <option value="CORE2008" >
+                        CORE2008
+                    </option>
+                
+            </select>
+            <br>
+
+            <input type="hidden" id="sort" name="sort" value="atitle"/>
+            <input type="hidden" id="page" name="page" value="1"/>
+            <input type="submit" value="Search"/>
+            <br>
+
+            <div class="ranking_summary">
+                CORE2023 Summary:
+                <br>
+                
+                    A* - 7.65% of 784 ranked venues
+                    <br>
+                
+                    A - 14.92% of 784 ranked venues
+                    <br>
+                
+                    B - 28.06% of 784 ranked venues
+                    <br>
+                
+                    Australasian B - 0.77% of 784 ranked venues
+                    <br>
+                
+                    C - 46.17% of 784 ranked venues
+                    <br>
+                
+                    Australasian C - 2.42% of 784 ranked venues
+                    <br>
+                
+                Other - 172 total
+            </div>
+
+            
+                Showing results 1 - 50 of 956
+                <br>
+
+                <span class="export">
+                <input type="submit" name="do" value="Export"/>
+            </span>
+                </form>
+
+                <table>
+                    <tr>
+                        <th class="nowrap">
+                            <b>Title</b>
+                            <a href="javascript: sortField('dtitle')" >
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Acronym</b>
+                            <a href="javascript: sortField('aacronym')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Source</b>
+                            <a href="javascript: sortField('asource')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Rank</b>
+                            <a href="javascript: sortField('arank')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Note</b>
+                            <a href="javascript: sortField('anote')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>DBLP</b>
+                            <a href="javascript: sortField('adblp')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Primary FoR</b>
+                            <a href="javascript: sortField('afor1')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Comments</b>
+                            <a href="javascript: sortField('acomment')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                        <th class="nowrap">
+                            <b>Average Rating</b>
+                            <a href="javascript: sortField('arating')">
+                                <img src="/core/static/conferences/updownarrow.png" width="15" height="15"/>
+                            </a>
+                        </th>
+                    </tr>
+
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/2172/')">
+                            <td>
+                                 International Conference on Advanced Communications and Computation
+                            </td>
+                            <td class="nowrap">
+                                INFOCOMP
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                Unranked
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                none
+                            </td>
+                            <td class="nowrap">
+                                46
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/2189/')">
+                            <td>
+                                 International Conference on Ambient Systems, Networks and Technologies
+                            </td>
+                            <td class="nowrap">
+                                ANT
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                Unranked
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/ant">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                2
+                            </td>
+                            <td class="nowrap">
+                                4.5
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/2264/')">
+                            <td>
+                                AAAI Conference on Human Computation and Crowdsourcing
+                            </td>
+                            <td class="nowrap">
+                                HCOMP
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/hcomp">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/9/')">
+                            <td>
+                                ACIS Conference on Software Engineering Research, Management and Applications
+                            </td>
+                            <td class="nowrap">
+                                SERA
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                C
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sera">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4612
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                4.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/11/')">
+                            <td>
+                                ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication
+                            </td>
+                            <td class="nowrap">
+                                SIGCOMM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigcomm">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/12/')">
+                            <td>
+                                ACM Conference on Computer and Communications Security
+                            </td>
+                            <td class="nowrap">
+                                CCS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/ccs">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4604
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/13/')">
+                            <td>
+                                ACM Conference on Computer Supported Cooperative Work
+                            </td>
+                            <td class="nowrap">
+                                CSCW
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/cscw">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/14/')">
+                            <td>
+                                ACM Conference on Economics and Computation
+                            </td>
+                            <td class="nowrap">
+                                EC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigecom">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4602
+                            </td>
+                            <td class="nowrap">
+                                2
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/15/')">
+                            <td>
+                                ACM Conference on Embedded Networked Sensor Systems
+                            </td>
+                            <td class="nowrap">
+                                SENSYS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sensys">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/18/')">
+                            <td>
+                                ACM Conference on Object Oriented Programming Systems Languages and Applications
+                            </td>
+                            <td class="nowrap">
+                                OOPSLA
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/oopsla">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4612
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/2313/')">
+                            <td>
+                                ACM Conference on Security and Privacy in Wireless and Mobile Networks
+                            </td>
+                            <td class="nowrap">
+                                ACM_WiSec
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.org/db/conf/wisec/index.html">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4604
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/21/')">
+                            <td>
+                                ACM Information Technology Education
+                            </td>
+                            <td class="nowrap">
+                                SIGITE
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                National: USA
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigite">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/2319/')">
+                            <td>
+                                ACM Int&#x27;l Symposium on Field Programmable Gate Arrays
+                            </td>
+                            <td class="nowrap">
+                                FPGA
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                TBR
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a href="/core/media/filesToDisplay/to-be-ranked2023.pdf">See note</a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/fpga/index.html">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                CSE
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/23/')">
+                            <td>
+                                ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)
+                            </td>
+                            <td class="nowrap">
+                                ACE
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                C
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a href="/core/media/filesToDisplay/missing-submissions-process2023.pdf">See note</a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                none
+                            </td>
+                            <td class="nowrap">
+                                4607
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/22/')">
+                            <td>
+                                ACM International Conference on Advances in Geographic Information Systems
+                            </td>
+                            <td class="nowrap">
+                                SIGSPATIAL
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/gis">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4601
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/24/')">
+                            <td>
+                                ACM International Conference on Emerging Networking Experiments and Technologies
+                            </td>
+                            <td class="nowrap">
+                                CoNEXT
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/conext">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/25/')">
+                            <td>
+                                ACM International Conference on Information and Knowledge Management
+                            </td>
+                            <td class="nowrap">
+                                CIKM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/cikm">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/1488/')">
+                            <td>
+                                ACM International Conference on Interactive Surfaces and Spaces (was International Workshop on Horizontal Interactive Human-Computer Systems: Tabletop)
+                            </td>
+                            <td class="nowrap">
+                                ISS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                Journal Published
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/tabletop">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                4.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/26/')">
+                            <td>
+                                ACM International Conference on Knowledge Discovery and Data Mining
+                            </td>
+                            <td class="nowrap">
+                                KDD
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/kdd">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/27/')">
+                            <td>
+                                ACM International Conference on Mobile Computing and Networking
+                            </td>
+                            <td class="nowrap">
+                                MOBICOM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/mobicom">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/28/')">
+                            <td>
+                                ACM International Conference on Recommender Systems
+                            </td>
+                            <td class="nowrap">
+                                RecSys
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/recsys">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/29/')">
+                            <td>
+                                ACM International Conference on Research and Development in Information Retrieval
+                            </td>
+                            <td class="nowrap">
+                                SIGIR
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigir">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/30/')">
+                            <td>
+                                ACM International Conference on Supercomputing
+                            </td>
+                            <td class="nowrap">
+                                ICS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/ics">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                CSE
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/52/')">
+                            <td>
+                                ACM International Conference on the Foundations of Software Engineering (was ESEC/FSE, changed 2024; duplicate previously listed as ESEC, removed from DB)
+                            </td>
+                            <td class="nowrap">
+                                FSE
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.org/db/conf/sigsoft">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4612
+                            </td>
+                            <td class="nowrap">
+                                6
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/31/')">
+                            <td>
+                                ACM International Conference on Web Search and Data Mining
+                            </td>
+                            <td class="nowrap">
+                                WSDM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a href="/core/media/filesToDisplay/missing-submissions-process2023.pdf">See note</a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/wsdm">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/1825/')">
+                            <td>
+                                ACM International Joint Conference on Pervasive and Ubiquitous Computing (PERVASIVE and UbiComp combined from 2013)
+                            </td>
+                            <td class="nowrap">
+                                UbiComp
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                journal published
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/huc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/32/')">
+                            <td>
+                                ACM International Symposium on Computer Architecture
+                            </td>
+                            <td class="nowrap">
+                                ISCA
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/isca">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                CSE
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/33/')">
+                            <td>
+                                ACM International Symposium on High Performance Distributed Computing
+                            </td>
+                            <td class="nowrap">
+                                HPDC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/hpdc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/34/')">
+                            <td>
+                                ACM International Wireless Communications and Mobile Computing Conference
+                            </td>
+                            <td class="nowrap">
+                                IWCMC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/iwcmc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/37/')">
+                            <td>
+                                ACM Multimedia
+                            </td>
+                            <td class="nowrap">
+                                ACMMM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/mm">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4603
+                            </td>
+                            <td class="nowrap">
+                                3
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/38/')">
+                            <td>
+                                ACM SIG International Conference on Computer Graphics and Interactive Techniques
+                            </td>
+                            <td class="nowrap">
+                                SIGGRAPH
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/siggraph">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4607
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/42/')">
+                            <td>
+                                ACM SIGGRAPH/Eurographics Symposium on Computer Animation
+                            </td>
+                            <td class="nowrap">
+                                SCA
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sca">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4607
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                4.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/45/')">
+                            <td>
+                                ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services
+                            </td>
+                            <td class="nowrap">
+                                Mobisys
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/mobisys">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                5
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/46/')">
+                            <td>
+                                ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems
+                            </td>
+                            <td class="nowrap">
+                                PODS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/pods">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/48/')">
+                            <td>
+                                ACM SIGOPS Symposium on Operating Systems Principles
+                            </td>
+                            <td class="nowrap">
+                                SOSP
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sosp">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/49/')">
+                            <td>
+                                ACM SIGPLAN Conference on Languages, Compilers and Tools for Embedded Systems
+                            </td>
+                            <td class="nowrap">
+                                LCTES
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/lctrts">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/50/')">
+                            <td>
+                                ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation
+                            </td>
+                            <td class="nowrap">
+                                PEPM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                C
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/pepm">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4612
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/78/')">
+                            <td>
+                                ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (was Parallel and Distributed Simulation)
+                            </td>
+                            <td class="nowrap">
+                                PADS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/pads">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/54/')">
+                            <td>
+                                ACM SIGUCCS Conference on User Services
+                            </td>
+                            <td class="nowrap">
+                                SIGUCCS
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                National: USA
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/siguccs">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4601
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/55/')">
+                            <td>
+                                ACM Special Interest Group on Computer Science Education Conference
+                            </td>
+                            <td class="nowrap">
+                                SIGCSE
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigcse">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/56/')">
+                            <td>
+                                ACM Special Interest Group on Management of Data Conference
+                            </td>
+                            <td class="nowrap">
+                                SIGMOD
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sigmod">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/57/')">
+                            <td>
+                                ACM Special Interest Group on Supporting Group Work (was SIGGRoup)
+                            </td>
+                            <td class="nowrap">
+                                Group
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.org/db/conf/group/index.html">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/1775/')">
+                            <td>
+                                ACM Symposium on Access Control Models and Technologies (previously ACM Workshop on Role-Based Access Control, RBAC, changed in 2000)
+                            </td>
+                            <td class="nowrap">
+                                SACMAT
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                C
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sacmat">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4604
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                4.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/59/')">
+                            <td>
+                                ACM Symposium on Applied Computing
+                            </td>
+                            <td class="nowrap">
+                                SAC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                Multiconference
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/sac">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4601
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/2003/')">
+                            <td>
+                                ACM Symposium on Document Engineering
+                            </td>
+                            <td class="nowrap">
+                                DocEng
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                B
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/doceng">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4605
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/58/')">
+                            <td>
+                                ACM Symposium on Mobile Ad Hoc Networking and Computing
+                            </td>
+                            <td class="nowrap">
+                                MOBIHOC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/mobihoc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/63/')">
+                            <td>
+                                ACM Symposium on Principles of Distributed Computing
+                            </td>
+                            <td class="nowrap">
+                                PODC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/podc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4606
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/64/')">
+                            <td>
+                                ACM Symposium on Solid and Physical Modelling
+                            </td>
+                            <td class="nowrap">
+                                SPM
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                C
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a href="/core/media/filesToDisplay/missing-submissions-process2023.pdf">See note</a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                none
+                            </td>
+                            <td class="nowrap">
+                                4607
+                            </td>
+                            <td class="nowrap">
+                                0
+                            </td>
+                            <td class="nowrap">
+                                N/A
+                            </td>
+                        </tr>
+                    
+                        <tr class="evenrow" onclick="navigate('/conf-ranks/65/')">
+                            <td>
+                                ACM Symposium on Theory of Computing
+                            </td>
+                            <td class="nowrap">
+                                STOC
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/stoc">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4613
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+                        <tr class="oddrow" onclick="navigate('/conf-ranks/66/')">
+                            <td>
+                                ACM Symposium on User Interface Software and Technology
+                            </td>
+                            <td class="nowrap">
+                                UIST
+                            </td>
+                            <td class="nowrap">
+                                CORE2023
+                            </td>
+                            <td class="nowrap">
+                                A*
+                            </td>
+                            <td class="nowrap">
+                                
+                                    none
+                                
+                            </td>
+                            <td class="nowrap">
+                                
+                                    <a target="_blank" href="https://dblp.uni-trier.de/db/conf/uist">
+                                        <div style="height:100%; width: 100%" onclick="event.cancelBubble=true;">
+                                            view
+                                        </div>
+                                    </a>
+                                
+                            </td>
+                            <td class="nowrap">
+                                4608
+                            </td>
+                            <td class="nowrap">
+                                1
+                            </td>
+                            <td class="nowrap">
+                                5.0
+                            </td>
+                        </tr>
+                    
+
+                </table>
+                <br>
+
+                
+                    
+
+                        
+                            <b>1</b>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('2')">2</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('3')">3</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('4')">4</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('5')">5</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('6')">6</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('7')">7</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('8')">8</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('9')">9</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('10')">10</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('11')">11</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('12')">12</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('13')">13</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('14')">14</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('15')">15</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('16')">16</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('17')">17</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('18')">18</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('19')">19</a>&nbsp;
+                        
+
+                    
+
+                        
+                            <a href="javascript: jumpPage('20')">20</a>&nbsp;
+                        
+
+                    
+                
+
+            
+
+    </div>
+
+            </div>
+
+            
+            <div id="footer" class="grid_12" style="width:95%">
+                &copy; 2013 Computing Research & Education 
+		    </div>
+		    
+		    
+        </div>
+    </body>
+</html>

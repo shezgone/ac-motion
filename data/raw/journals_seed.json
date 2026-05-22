@@ -1,0 +1,61 @@
+[
+  { "acronym": "TPAMI", "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence", "field": "Vision/Graphics", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/tp" },
+  { "acronym": "IJCV", "name": "International Journal of Computer Vision", "field": "Vision/Graphics", "grade": "Q1", "country": "Netherlands", "publisher": "Springer", "url": "https://link.springer.com/journal/11263" },
+  { "acronym": "PR", "name": "Pattern Recognition", "field": "Vision/Graphics", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/pattern-recognition" },
+  { "acronym": "TIP", "name": "IEEE Transactions on Image Processing", "field": "Vision/Graphics", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing" },
+  { "acronym": "TOG", "name": "ACM Transactions on Graphics", "field": "Vision/Graphics", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tog" },
+  { "acronym": "CGF", "name": "Computer Graphics Forum", "field": "Vision/Graphics", "grade": "Q1", "country": "United Kingdom", "publisher": "Wiley", "url": "https://onlinelibrary.wiley.com/journal/14678659" },
+
+  { "acronym": "JMLR", "name": "Journal of Machine Learning Research", "field": "AI/ML", "grade": "Q1", "country": "USA", "publisher": "MIT Press", "url": "https://jmlr.org" },
+  { "acronym": "AIJ", "name": "Artificial Intelligence", "field": "AI/ML", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/artificial-intelligence" },
+  { "acronym": "ML", "name": "Machine Learning (Springer)", "field": "AI/ML", "grade": "Q1", "country": "Netherlands", "publisher": "Springer", "url": "https://link.springer.com/journal/10994" },
+  { "acronym": "JAIR", "name": "Journal of Artificial Intelligence Research", "field": "AI/ML", "grade": "Q1", "country": "USA", "publisher": "AAAI", "url": "https://jair.org" },
+  { "acronym": "TNNLS", "name": "IEEE Transactions on Neural Networks and Learning Systems", "field": "AI/ML", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://cis.ieee.org/publications/t-neural-networks-and-learning-systems" },
+  { "acronym": "TPAMI-AI", "name": "IEEE TPAMI (AI section)", "field": "AI/ML", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/tp" },
+
+  { "acronym": "TKDE", "name": "IEEE Transactions on Knowledge and Data Engineering", "field": "Data/DB", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/tk" },
+  { "acronym": "TODS", "name": "ACM Transactions on Database Systems", "field": "Data/DB", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tods" },
+  { "acronym": "VLDBJ", "name": "The VLDB Journal", "field": "Data/DB", "grade": "Q1", "country": "Germany", "publisher": "Springer", "url": "https://link.springer.com/journal/778" },
+  { "acronym": "IS", "name": "Information Systems", "field": "Data/DB", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/information-systems" },
+  { "acronym": "DKE", "name": "Data & Knowledge Engineering", "field": "Data/DB", "grade": "Q2", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/data-and-knowledge-engineering" },
+
+  { "acronym": "TON", "name": "IEEE/ACM Transactions on Networking", "field": "Systems", "grade": "Q1", "country": "USA", "publisher": "IEEE/ACM", "url": "https://www.comsoc.org/publications/journals/ieee-tnet" },
+  { "acronym": "TOCS", "name": "ACM Transactions on Computer Systems", "field": "Systems", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tocs" },
+  { "acronym": "TPDS", "name": "IEEE Transactions on Parallel and Distributed Systems", "field": "Systems", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/td" },
+  { "acronym": "ComNet", "name": "Computer Networks", "field": "Systems", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/computer-networks" },
+  { "acronym": "DC", "name": "Distributed Computing", "field": "Systems", "grade": "Q1", "country": "Germany", "publisher": "Springer", "url": "https://link.springer.com/journal/446" },
+
+  { "acronym": "TSE", "name": "IEEE Transactions on Software Engineering", "field": "Software Eng.", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/ts" },
+  { "acronym": "TOSEM", "name": "ACM Transactions on Software Engineering and Methodology", "field": "Software Eng.", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tosem" },
+  { "acronym": "EMSE", "name": "Empirical Software Engineering", "field": "Software Eng.", "grade": "Q1", "country": "Germany", "publisher": "Springer", "url": "https://link.springer.com/journal/10664" },
+  { "acronym": "JSS", "name": "Journal of Systems and Software", "field": "Software Eng.", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/journal-of-systems-and-software" },
+  { "acronym": "IST", "name": "Information and Software Technology", "field": "Software Eng.", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/information-and-software-technology" },
+  { "acronym": "TOPLAS", "name": "ACM Transactions on Programming Languages and Systems", "field": "Software Eng.", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/toplas" },
+
+  { "acronym": "TIFS", "name": "IEEE Transactions on Information Forensics and Security", "field": "Security", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security" },
+  { "acronym": "TDSC", "name": "IEEE Transactions on Dependable and Secure Computing", "field": "Security", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/journal/tq" },
+  { "acronym": "JCS", "name": "Journal of Computer Security", "field": "Security", "grade": "Q2", "country": "Netherlands", "publisher": "IOS Press", "url": "https://www.iospress.com/catalog/journals/journal-of-computer-security" },
+  { "acronym": "C&S", "name": "Computers & Security", "field": "Security", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/computers-and-security" },
+
+  { "acronym": "TOIS", "name": "ACM Transactions on Information Systems", "field": "Info Systems", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tois" },
+  { "acronym": "JASIST", "name": "Journal of the Association for Information Science and Technology", "field": "Info Systems", "grade": "Q1", "country": "USA", "publisher": "Wiley", "url": "https://asistdl.onlinelibrary.wiley.com/journal/23301643" },
+  { "acronym": "MISQ", "name": "MIS Quarterly", "field": "Info Systems", "grade": "Q1", "country": "USA", "publisher": "MISRC", "url": "https://misq.umn.edu" },
+  { "acronym": "ISR", "name": "Information Systems Research", "field": "Info Systems", "grade": "Q1", "country": "USA", "publisher": "INFORMS", "url": "https://pubsonline.informs.org/journal/isre" },
+
+  { "acronym": "IJHCS", "name": "International Journal of Human-Computer Studies", "field": "HCI", "grade": "Q1", "country": "United Kingdom", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/international-journal-of-human-computer-studies" },
+  { "acronym": "HCI", "name": "Human-Computer Interaction", "field": "HCI", "grade": "Q1", "country": "United Kingdom", "publisher": "Taylor & Francis", "url": "https://www.tandfonline.com/journals/hhci20" },
+  { "acronym": "BIT", "name": "Behaviour & Information Technology", "field": "HCI", "grade": "Q2", "country": "United Kingdom", "publisher": "Taylor & Francis", "url": "https://www.tandfonline.com/journals/tbit20" },
+  { "acronym": "TOCHI", "name": "ACM Transactions on Computer-Human Interaction", "field": "HCI", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/tochi" },
+
+  { "acronym": "JACM", "name": "Journal of the ACM", "field": "Theory", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://dl.acm.org/journal/jacm" },
+  { "acronym": "SICOMP", "name": "SIAM Journal on Computing", "field": "Theory", "grade": "Q1", "country": "USA", "publisher": "SIAM", "url": "https://epubs.siam.org/journal/smjcat" },
+  { "acronym": "TCS", "name": "Theoretical Computer Science", "field": "Theory", "grade": "Q1", "country": "Netherlands", "publisher": "Elsevier", "url": "https://www.sciencedirect.com/journal/theoretical-computer-science" },
+  { "acronym": "Algorithmica", "name": "Algorithmica", "field": "Theory", "grade": "Q1", "country": "Germany", "publisher": "Springer", "url": "https://link.springer.com/journal/453" },
+
+  { "acronym": "CACM", "name": "Communications of the ACM", "field": "Other CS", "grade": "Q1", "country": "USA", "publisher": "ACM", "url": "https://cacm.acm.org" },
+  { "acronym": "Computer", "name": "IEEE Computer", "field": "Other CS", "grade": "Q1", "country": "USA", "publisher": "IEEE", "url": "https://www.computer.org/csdl/magazine/co" },
+
+  { "acronym": "JKIISE", "name": "정보과학회논문지", "field": "Other CS", "grade": "KCI Top", "country": "South Korea", "publisher": "KIISE", "url": "https://www.kiise.or.kr/academy/acntcInfo/jrnList.do" },
+  { "acronym": "JKICS", "name": "한국통신학회논문지", "field": "Systems", "grade": "KCI Top", "country": "South Korea", "publisher": "KICS", "url": "https://journal.kics.or.kr" },
+  { "acronym": "TKIPS", "name": "정보처리학회논문지", "field": "Software Eng.", "grade": "KCI", "country": "South Korea", "publisher": "KIPS", "url": "https://kips.or.kr" }
+]
