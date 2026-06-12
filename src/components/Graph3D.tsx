@@ -219,7 +219,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Props>(function Graph3D(
           ...glassButton,
           position: "absolute",
           top: 20,
-          right: 252,
+          right: 375,
           fontSize: 12,
           padding: "8px 14px",
           ...(frozen ? { outline: "1.5px solid #ffd770" } : {}),
