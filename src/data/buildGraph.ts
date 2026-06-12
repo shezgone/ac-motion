@@ -35,10 +35,13 @@ export function buildGraph(
   venues: Venue[],
   relations: VenueRelation[] = [],
   includeRelations = true,
+  bondSameFields = false,
 ): GraphData {
   const nodes = new Map<string, GraphNode>();
   const links: GraphLink[] = [];
   const venueIds = new Set<string>();
+  const cfVenueCount = new Map<string, number>();
+  const cfIdsByField = new Map<string, string[]>();
 
   for (const v of venues) {
     const country = v.country ?? "International";
@@ -65,7 +68,11 @@ export function buildGraph(
         color: FIELD_COLOR,
       });
       links.push({ source: countryId, target: cfId, linkKind: "tier" });
+      const ids = cfIdsByField.get(v.field) ?? [];
+      ids.push(cfId);
+      cfIdsByField.set(v.field, ids);
     }
+    cfVenueCount.set(cfId, (cfVenueCount.get(cfId) ?? 0) + 1);
     nodes.set(venueId, {
       id: venueId,
       label: v.acronym ?? v.name,
@@ -75,6 +82,20 @@ export function buildGraph(
       color: gradeColor(v.grade),
     });
     links.push({ source: cfId, target: venueId, linkKind: "tier" });
+  }
+
+  // 분야 필터 활성 시: 나라별로 흩어진 같은 분야 노드들을 보조 엣지로 묶어
+  // force 레이아웃이 한 군집으로 끌어당기게 한다 (허브 = 베뉴가 가장 많은 노드)
+  if (bondSameFields) {
+    for (const ids of cfIdsByField.values()) {
+      if (ids.length < 2) continue;
+      const hub = ids.reduce((a, b) =>
+        (cfVenueCount.get(b) ?? 0) > (cfVenueCount.get(a) ?? 0) ? b : a,
+      );
+      for (const id of ids) {
+        if (id !== hub) links.push({ source: hub, target: id, linkKind: "fieldBond" });
+      }
+    }
   }
 
   if (includeRelations) {

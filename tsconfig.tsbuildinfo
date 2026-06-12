@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/components/democontroller.tsx","./src/components/filtersidebar.tsx","./src/components/graph3d.tsx","./src/components/handtracker.tsx","./src/components/motionhelp.tsx","./src/data/buildgraph.ts","./src/data/types.ts","./src/hooks/usehandlandmarker.ts","./src/styles/glass.ts"],"version":"5.9.3"}

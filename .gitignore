@@ -3,3 +3,9 @@ dist
 .DS_Store
 *.local
 .vite
+.loop
+graphify-out
+server/advisor.db*
+server/uploads
+tsconfig.tsbuildinfo
+.claude/settings.local.json

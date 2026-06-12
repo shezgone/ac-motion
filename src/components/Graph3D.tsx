@@ -3,7 +3,7 @@ import ForceGraph3D, { type ForceGraphMethods } from "react-force-graph-3d";
 import * as THREE from "three";
 import type { GraphData, GraphNode } from "../data/types";
 import type { HandSignal } from "../hooks/useHandLandmarker";
-import { glassPanel } from "../styles/glass";
+import { glassButton, glassPanel } from "../styles/glass";
 
 export interface Graph3DHandle {
   focusByAcronym: (acronym: string) => boolean;
@@ -34,6 +34,24 @@ export const Graph3D = forwardRef<Graph3DHandle, Props>(function Graph3D(
   const [size, setSize] = useState({ w: window.innerWidth, h: window.innerHeight });
   const [selected, setSelected] = useState<GraphNode | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [frozen, setFrozen] = useState(false);
+
+  // 필터 등으로 데이터가 바뀌면 레이아웃 재계산이 필요하므로 정지 자동 해제
+  useEffect(() => {
+    setFrozen(false);
+    // dev 전용: E2E 테스트가 노드 좌표(레이아웃 정지 여부)를 검증할 수 있게 노출
+    if (import.meta.env.DEV) {
+      (window as unknown as { __acmotionNodes?: GraphNode[] }).__acmotionNodes = data.nodes;
+    }
+  }, [data]);
+
+  const toggleFrozen = useCallback(() => {
+    setFrozen((prev) => {
+      const next = !prev;
+      if (!next) fgRef.current?.d3ReheatSimulation();
+      return next;
+    });
+  }, []);
 
   useEffect(() => {
     const onResize = () => setSize({ w: window.innerWidth, h: window.innerHeight });
@@ -177,6 +195,7 @@ export const Graph3D = forwardRef<Graph3DHandle, Props>(function Graph3D(
       <ForceGraph3D
         ref={fgRef}
         graphData={data}
+        cooldownTicks={frozen ? 0 : Infinity}
         width={size.w}
         height={size.h}
         backgroundColor="#06080d"
@@ -194,6 +213,21 @@ export const Graph3D = forwardRef<Graph3DHandle, Props>(function Graph3D(
         linkDirectionalParticleSpeed={0.006}
         onNodeClick={(n) => focusOnNode(n as GraphNode)}
       />
+      <button
+        onClick={toggleFrozen}
+        style={{
+          ...glassButton,
+          position: "absolute",
+          top: 20,
+          right: 252,
+          fontSize: 12,
+          padding: "8px 14px",
+          ...(frozen ? { outline: "1.5px solid #ffd770" } : {}),
+        }}
+        title="레이아웃 정지/재개 — 카메라·선택은 계속 동작"
+      >
+        {frozen ? "▶ resume" : "⏸ freeze"}
+      </button>
       {selected && <DetailCard node={selected} onClose={() => setSelected(null)} />}
       {hoveredId && !selected && <HoverHud node={data.nodes.find((n) => n.id === hoveredId) ?? null} />}
     </>
@@ -324,7 +358,7 @@ function nodeObjectFor(node: GraphNode): THREE.Object3D {
 type LinkLike = {
   source?: string | number | GraphNode;
   target?: string | number | GraphNode;
-  linkKind?: "tier" | "related";
+  linkKind?: "tier" | "related" | "fieldBond";
 };
 
 function srcKind(l: LinkLike): GraphNode["kind"] | null {
@@ -333,6 +367,7 @@ function srcKind(l: LinkLike): GraphNode["kind"] | null {
 }
 
 function linkColorFor(l: LinkLike): string {
+  if (l.linkKind === "fieldBond") return "rgba(155,107,255,0.28)";
   if (l.linkKind === "related") return "rgba(255,225,180,0.55)";
   switch (srcKind(l)) {
     case "country":
@@ -345,6 +380,7 @@ function linkColorFor(l: LinkLike): string {
 }
 
 function linkWidthFor(l: LinkLike): number {
+  if (l.linkKind === "fieldBond") return 0.4;
   if (l.linkKind === "related") return 0.6;
   switch (srcKind(l)) {
     case "country":
@@ -357,6 +393,7 @@ function linkWidthFor(l: LinkLike): number {
 }
 
 function linkParticlesFor(l: LinkLike): number {
+  if (l.linkKind === "fieldBond") return 0;
   if (l.linkKind === "related") return 1;
   switch (srcKind(l)) {
     case "country":
@@ -369,6 +406,7 @@ function linkParticlesFor(l: LinkLike): number {
 }
 
 function linkCurvatureFor(l: LinkLike): number {
+  if (l.linkKind === "fieldBond") return 0.2;
   return l.linkKind === "related" ? 0.3 : 0;
 }
 

@@ -54,7 +54,7 @@ export interface GraphNode {
   z?: number;
 }
 
-export type GraphLinkKind = "tier" | "related";
+export type GraphLinkKind = "tier" | "related" | "fieldBond";
 
 export interface GraphLink {
   source: string;

@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useRef, useState } from "react";
+import { AdvisorPanel } from "./components/AdvisorPanel";
 import { Graph3D, type Graph3DHandle } from "./components/Graph3D";
 import { HandTracker } from "./components/HandTracker";
 import { FilterSidebar } from "./components/FilterSidebar";
@@ -29,8 +30,9 @@ export function App() {
 
   const filteredVenues = useMemo(() => applyFilters(allVenues, filters), [filters]);
   const graph = useMemo(
-    () => buildGraph(filteredVenues, allRelations, filters.showRelations),
-    [filteredVenues, filters.showRelations],
+    () =>
+      buildGraph(filteredVenues, allRelations, filters.showRelations, filters.fields.size > 0),
+    [filteredVenues, filters.showRelations, filters.fields],
   );
 
   const patchFilters = useCallback((patch: Partial<Filters>) => {
@@ -48,6 +50,7 @@ export function App() {
       />
       <HandTracker hand={hand} />
       <DemoController graphRef={graphRef} onFiltersPatch={patchFilters} />
+      <AdvisorPanel graphRef={graphRef} onFiltersPatch={patchFilters} />
       <MotionHelp />
       <header style={{ position: "absolute", top: 16, left: 20, pointerEvents: "none" }}>
         <h1 style={{ margin: 0, fontSize: 18, fontWeight: 600, letterSpacing: 0.3 }}>

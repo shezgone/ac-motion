@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun run *)",
+      "Bash(bun test*)",
+      "Bash(bun x vite*)",
+      "Bash(bun scripts/*)",
+      "Bash(bun install)",
+      "Read(//Users/*/vibe/ac-motion/.loop/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun \"$CLAUDE_PROJECT_DIR/.claude/hooks/post-edit-typecheck.ts\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}
