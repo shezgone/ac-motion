@@ -95,6 +95,7 @@ export function FilterSidebar({ allVenues, shownCount, filters, onChange }: Prop
         <Check
           label="show citation / related links"
           swatch="#ffe1b4"
+          shape="line"
           checked={filters.showRelations}
           onChange={() => onChange({ ...filters, showRelations: !filters.showRelations })}
         />
@@ -106,6 +107,7 @@ export function FilterSidebar({ allVenues, shownCount, filters, onChange }: Prop
             key={g.value}
             label={`${g.value} (${g.count})`}
             swatch={gradeColor(g.value)}
+            shape="square"
             checked={filters.grades.size === 0 || filters.grades.has(g.value)}
             onChange={() => onChange({ ...filters, grades: toggleSet(filters.grades, g.value) })}
             dim={filters.grades.size > 0 && !filters.grades.has(g.value)}
@@ -128,6 +130,7 @@ export function FilterSidebar({ allVenues, shownCount, filters, onChange }: Prop
             key={f.value}
             label={`${f.value} (${f.count})`}
             swatch={FIELD_COLOR}
+            shape="diamond"
             checked={filters.fields.size === 0 || filters.fields.has(f.value)}
             onChange={() => onChange({ ...filters, fields: toggleSet(filters.fields, f.value) })}
             dim={filters.fields.size > 0 && !filters.fields.has(f.value)}
@@ -150,6 +153,7 @@ export function FilterSidebar({ allVenues, shownCount, filters, onChange }: Prop
             key={c.value}
             label={`${c.value} (${c.count})`}
             swatch={COUNTRY_COLOR}
+            shape="circle"
             checked={filters.countries.size === 0 || filters.countries.has(c.value)}
             onChange={() =>
               onChange({ ...filters, countries: toggleSet(filters.countries, c.value) })
@@ -261,18 +265,42 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
+type SwatchShape = "circle" | "diamond" | "square" | "line";
+
+// 그래프 노드 모양과 동일한 의미: 원=국가(구체), 마름모=분야, 사각형=베뉴(큐브)
+function swatchStyle(shape: SwatchShape, color: string): React.CSSProperties {
+  const base: React.CSSProperties = {
+    display: "inline-block",
+    background: color,
+    boxShadow: `0 0 6px ${color}aa, inset 1px 1px 0 rgba(255,255,255,0.4)`,
+    flexShrink: 0,
+  };
+  switch (shape) {
+    case "diamond":
+      return { ...base, width: 9, height: 9, borderRadius: 2, transform: "rotate(45deg)" };
+    case "square":
+      return { ...base, width: 10, height: 10, borderRadius: 2 };
+    case "line":
+      return { ...base, width: 14, height: 3, borderRadius: 2 };
+    default:
+      return { ...base, width: 10, height: 10, borderRadius: "50%" };
+  }
+}
+
 function Check({
   label,
   checked,
   onChange,
   dim,
   swatch,
+  shape = "circle",
 }: {
   label: string;
   checked: boolean;
   onChange: () => void;
   dim?: boolean;
   swatch?: string;
+  shape?: SwatchShape;
 }) {
   return (
     <label
@@ -296,19 +324,7 @@ function Check({
         onChange={onChange}
         className="glass-checkbox"
       />
-      {swatch && (
-        <span
-          style={{
-            display: "inline-block",
-            width: 10,
-            height: 10,
-            borderRadius: "50%",
-            background: swatch,
-            boxShadow: `0 0 6px ${swatch}aa, inset 1px 1px 0 rgba(255,255,255,0.4)`,
-            flexShrink: 0,
-          }}
-        />
-      )}
+      {swatch && <span style={swatchStyle(shape, swatch)} />}
       <span>{label}</span>
     </label>
   );
