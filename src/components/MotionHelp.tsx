@@ -81,7 +81,7 @@ export function MotionHelp({ autoOpenFirstTime = true }: Props) {
           ...glassButton,
           position: "absolute",
           top: 20,
-          right: 130,
+          right: 142,
           fontSize: 12,
           padding: "8px 14px",
         }}

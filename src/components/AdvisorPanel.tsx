@@ -233,7 +233,7 @@ export function AdvisorPanel({ graphRef, onFiltersPatch }: Props) {
   if (!open) {
     return (
       <button
-        style={{ ...glassButton, position: "absolute", right: 20, bottom: 20 }}
+        style={{ ...glassButton, position: "absolute", right: 271, top: 20, fontSize: 12, padding: "8px 14px" }}
         onClick={() => setOpen(true)}
       >
         ✦ advisor
@@ -247,7 +247,7 @@ export function AdvisorPanel({ graphRef, onFiltersPatch }: Props) {
         ...glassPanel,
         position: "absolute",
         right: 16,
-        bottom: 16,
+        top: 60,
         width: 400,
         height: "min(640px, 80vh)",
         display: "flex",
